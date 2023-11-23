@@ -51,7 +51,7 @@ public class RecyclerViewActivity extends AppCompatActivity {
         progressDialog.setCanceledOnTouchOutside(false);  // Setting the progress dialog to be non-cancelable
         progressDialog.show();  // Showing the progress dialog
 
-        String URL = "https://thelightsurprise.com/user.php";  // URL for fetching user data
+        String URL = "";  // URL for fetching user data
         JsonArrayRequest jsonArrayRequest = new JsonArrayRequest(Request.Method.GET, URL, null,
                 new Response.Listener<JSONArray>() {
                     @Override
@@ -102,7 +102,7 @@ public class RecyclerViewActivity extends AppCompatActivity {
             HashMap<String, String> hashMap = arrayList.get(position);
             String path = hashMap.get("path");  // Retrieving the "path" value from the HashMap
 
-            String imageUrl = "https://thelightsurprise.com/" + path;  // Constructing the URL for the image
+            String imageUrl = "" + path;  // Constructing the URL for the image
             Picasso.get().load(imageUrl).placeholder(R.mipmap.ic_launcher).error(R.mipmap.ic_launcher).into(holder.path);  // Using Picasso library to load the image into the ImageView
         }
 

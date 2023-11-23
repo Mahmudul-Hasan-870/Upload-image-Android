@@ -13,7 +13,7 @@
         android:layout_height="100dp"
         android:layout_marginTop="50dp"
         android:gravity="center"
-        android:src="@drawable/ic_person" />
+        android:src="@mipmap/ic_launcher" />
 
     <Button
         android:id="@+id/Upload_Image"

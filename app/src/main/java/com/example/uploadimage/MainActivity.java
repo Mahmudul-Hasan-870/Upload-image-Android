@@ -78,7 +78,7 @@ public class MainActivity extends AppCompatActivity {
                 final String base64Image = Base64.encodeToString(bytes, Base64.DEFAULT);  // Encode the byte array to Base64 string
 
                 RequestQueue queue = Volley.newRequestQueue(getApplicationContext());
-                String url = "https://thelightsurprise.com/upload.php";  // URL for image upload
+                String url = "";  // URL for image upload
 
                 StringRequest stringRequest = new StringRequest(Request.Method.POST, url, response -> {
                     if (response.equals("success")) {
